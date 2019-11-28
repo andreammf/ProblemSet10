@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Search for Entertainment Venues in Boston</h1>
+    <form action="/search" method="post">
+        <input autocomplete="off" autofocus name="search" placeholder="Name" type="text">
+        <select name="category">
+            <option value="LICCATDESC">LICCATDESC</option>
+            <option value="DBANAME">DBANAME</option>
+            <option value="Neighborhood">Neighborhood</option>
+            <option value="CITY">City</option>
+        </select>
+        <input type="submit" value="RSVP">
+    </form>
+
+{% endblock %}
